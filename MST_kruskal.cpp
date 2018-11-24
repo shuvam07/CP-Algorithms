@@ -52,9 +52,9 @@ void _union(int x,int y){
 
 int main(){
 	int n,e,wt,src,dest;
-	cin>>n>>e;
+	cin>>n>>e;						// Input in 0 index 
 	int sum = 0;
-	init(n+1);						// n+1 considering index starts from 1
+	init(n);						
 	edges.resize(e);
 	for(int i=0;i<e;i++){
 		cin>>edges[i].src>>edges[i].dest>>edges[i].wt;
