@@ -28,7 +28,7 @@ void dijkstra(int n){
          vis[x] = true;
 
         for(int i = 0; i < v[x].size(); i++){
-            int e = v[x][i].first; int w = v[x][i].second;
+            int e = v[x][i].second; int w = v[x][i].first;
             if(dist[x] + w < dist[e]  ){            // check if the next vertex distance could be minimized
                 dist[e] = dist[x] + w;
                 s.insert({dist[e],  e} );           // insert the next vertex with the updated distance
